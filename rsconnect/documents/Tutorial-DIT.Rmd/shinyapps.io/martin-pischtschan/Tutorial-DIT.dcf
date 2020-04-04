@@ -1,0 +1,13 @@
+name: Tutorial-DIT
+title: Tutorial-DIT
+username:
+account: martin-pischtschan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2009659
+bundleId: 2934139
+url: https://martin-pischtschan.shinyapps.io/Tutorial-DIT/
+when: 1585347507.84005
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Tutorial-DIT_files/figure-html/pyplot-1.png

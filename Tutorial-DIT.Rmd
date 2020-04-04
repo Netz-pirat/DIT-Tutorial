@@ -1,0 +1,150 @@
+---
+title: "Quiz zum Fach Digitaltechnik"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(shiny)
+library(learnr)
+library(reticulate)
+use_condaenv("rstudio")
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Grundlegendes
+
+Dies ist eine kleines Quiz welches für das Fach Digitaltechnik an der ABB Technikerschule in Baden erstellt wurde.
+Im folgenden werden Sie, unterteilt in thematische Kapitel, mit verschiedenen Fragestellungen aus dem Bereich der Digitaltechnik konfrontiert. Ziel sollte es sein Ihr Wissen über die Digitaltechnik weiter zu festigen.
+
+## Einführung
+
+In diesem Kapitel werden grundlegende Themen der Digitaltechnik behandelt.
+
+```{r quiz-K1}
+quiz(
+  question("In welchen Bereichen wird auf Digitaltechnik zurückgegriffen?",correct = "Richtig!", incorrect = "Falsch!",submit_button = "Senden", try_again_button = "Wiederholen", allow_retry = TRUE, random_answer_order = TRUE,
+    answer("Computertechnik", correct = TRUE),
+    answer("Nachrichten- und Kommunikationstechnik", correct=TRUE),
+    answer("Automatisierungstechnik", correct = TRUE),
+    answer("Messtechnik", correct = TRUE) 
+  ),
+  question("In der Digitaltechnik wird zwischen zwei logischen Zuständen unterschieden!",correct = "Richtig!", incorrect = "Falsch!",submit_button = "Senden", try_again_button = "Wiederholen", allow_retry = TRUE, random_answer_order = TRUE,
+    answer("Wahr", correct = TRUE),
+    answer("Falsch")
+  ),
+  question("Digital ist grundsätzlich besser als analog!",correct = "Richtig!", incorrect = "Falsch!",submit_button = "Senden", try_again_button = "Wiederholen", allow_retry = TRUE, random_answer_order = TRUE,
+    answer("Falsch", correct = TRUE),
+    answer("Richtig.")
+  ),
+  question("Digitaltechnik wird die Analogtechnik in Zukunft völlig verdrängen!",correct = "Richtig!", incorrect = "Falsch!",submit_button = "Senden", try_again_button = "Wiederholen", allow_retry = TRUE, random_answer_order = TRUE,
+    answer("Falsch", correct = TRUE),
+    answer("Richtig.")
+  )
+)
+```
+
+## Grundbegriffe und Grundelemente
+
+```{r quiz-K2}
+quiz(
+  question("Analoge Grössen können innerhalb eines zulässigen Bereichs jeden denkbaren Wert annehmen!",correct = "Richtig!", incorrect = "Falsch!",submit_button = "Senden", try_again_button = "Wiederholen", allow_retry = TRUE, random_answer_order = TRUE,
+    answer("Richtig", correct = TRUE),
+    answer("Falsch")
+  ),
+  question("In der Digitaltechnik wird zwischen zwei logischen Zuständen unterschieden!",correct = "Richtig!", incorrect = "Falsch!",submit_button = "Senden", try_again_button = "Wiederholen", allow_retry = TRUE, random_answer_order = TRUE,
+    answer("Wahr", correct = TRUE),
+    answer("Falsch")
+  ),
+  question("Welche der folgenden Aussagen sind auf eine digitale Grössendarstellung zutreffend?",correct = "Richtig!", incorrect = "Falsch!",submit_button = "Senden", try_again_button = "Wiederholen", allow_retry = TRUE, random_answer_order = TRUE,
+    answer("Verwendet endliche Anzahl von Elemente zurück.", correct = TRUE),
+    answer("Der Genauigkeit ist eine physikalische Grenze gesetzt."),
+    answer("Digitale Anzeigen sind nicht eindeutig.")
+  ),
+  question("Digitaltechnik muss zwingend aus zwei Elementen/Zuständen bestehen!",correct = "Richtig!", incorrect = "Falsch!",submit_button = "Senden", try_again_button = "Wiederholen", allow_retry = TRUE, random_answer_order = TRUE,
+    answer("Falsch", correct = TRUE),
+    answer("Richtig.")
+  )
+)
+```
+
+Folgende mathematische Formeln existieren:
+
+$$
+x=a+b^{2}
+$$
+
+### Exercise 
+
+*Here's a simple exercise with an empty code chunk provided for entering the answer.*
+
+Python Code funktioniert. Schreibe eine Funktion die den Text "Hello World" auf der Konsole ausgibt!
+
+```{python print, echo=TRUE}
+cars = ["Volvo","Audi","BMW"]
+for i in cars:
+  print(i)
+
+```
+
+Write the R code required to add two plus two:
+
+```{r two-plus-two, exercise=TRUE}
+
+```
+
+```{chunck codetest, echo=TRUE}
+sudo su - -c "R -e \"install.packages(c('ggplot2', 'dplyr', 'tidyr', 'readr', 'lazyeval', 'stringr', 'ggthemes', 'ggExtra', 'magrittr', 'viridis', 'gridExtra', 'lubridate', 'fasttime', 'data.table'), repos='http://cran.rstudio.com/')\""
+```
+
+### Exercise with Code
+
+*Here's an exercise with some prepopulated code as well as `exercise.lines = 5` to provide a bit more initial room to work.*
+
+Now write a function that adds any two numbers and then call it:
+
+```{r add-function, exercise=TRUE, exercise.lines = 5}
+add <- function() {
+  
+}
+```
+
+## Topic 2
+
+### Exercise with Hint
+
+*Here's an exercise where the chunk is pre-evaulated via the `exercise.eval` option (so the user can see the default output we'd like them to customize). We also add a "hint" to the correct solution via the chunk immediate below labeled `print-limit-hint`.*
+
+Modify the following code to limit the number of rows printed to 5:
+
+```{r print-limit, exercise=TRUE, exercise.eval=TRUE}
+mtcars
+```
+
+```{r print-limit-hint}
+head(mtcars)
+```
+
+### Quiz
+
+*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
+
+Some questions to verify that you understand the purposes of various base and recommended R packages:
+
+```{r quiz}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+

@@ -1,0 +1,13 @@
+name: tutorial-dit
+title: Tutorial-DIT
+username: martin_pischtschan
+account: martin_pischtschan
+server: bookdown.org
+hostUrl: https://bookdown.org/__api__
+appId: 4058
+bundleId: 19707
+url: https://bookdown.org/martin_pischtschan/tutorial-dit/
+when: 1585346321.78639
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Tutorial-DIT_files/figure-html/pyplot-1.png
