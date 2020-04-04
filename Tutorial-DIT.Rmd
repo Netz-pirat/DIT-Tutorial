@@ -7,7 +7,7 @@ runtime: shiny_prerendered
 ```{r setup, include=FALSE}
 library(shiny)
 library(learnr)
-library(reticulate)
+#library(reticulate)
 #use_condaenv("rstudio")
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -79,13 +79,6 @@ $$
 *Here's a simple exercise with an empty code chunk provided for entering the answer.*
 
 Python Code funktioniert. Schreibe eine Funktion die den Text "Hello World" auf der Konsole ausgibt!
-
-```{python print, echo=TRUE}
-cars = ["Volvo","Audi","BMW"]
-for i in cars:
-  print(i)
-
-```
 
 Write the R code required to add two plus two:
 
