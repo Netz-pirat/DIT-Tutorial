@@ -8,7 +8,7 @@ runtime: shiny_prerendered
 library(shiny)
 library(learnr)
 library(reticulate)
-use_condaenv("rstudio")
+#use_condaenv("rstudio")
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
